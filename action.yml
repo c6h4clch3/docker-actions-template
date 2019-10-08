@@ -1,0 +1,9 @@
+name: "textlint"
+author: "c6h4clch3"
+description: |
+  GitHub Action for running textlint
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - "README.md"
