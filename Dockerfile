@@ -1,7 +1,7 @@
 FROM alpine:3.10
 
-COPY entrypoint.sh /entrypoint.sh
+RUN apk update && apk add nodejs
 
-CMD apk update && apk add nodejs
+COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
