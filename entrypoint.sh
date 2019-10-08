@@ -2,4 +2,5 @@
 
 echo "Hello, Actions"
 
-cat ./$1
+node --version
+# cat ./$1
