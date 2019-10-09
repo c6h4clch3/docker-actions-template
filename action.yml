@@ -2,8 +2,12 @@ name: "template"
 author: "c6h4clch3"
 description: |
   Template for GitHub Action with Docker
+inputs:
+  target:
+    description: |
+      Target of cat
+    required: false
+    default: "README.md"
 runs:
   using: "docker"
   image: "Dockerfile"
-  args:
-    - "README.md"

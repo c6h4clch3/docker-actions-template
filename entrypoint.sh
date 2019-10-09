@@ -2,4 +2,4 @@
 
 echo "Hello, Actions"
 
-cat ./$1
+cat $INPUT_TARGET
